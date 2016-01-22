@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>基于jquery的placeholder</title>
+    <style type="text/css">
+        .test{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border: 5px solid #ffae2f;
+            font-size: 18px;
+            color: #666;
+            padding: 0 6px;
+            font-family: 'microsoft yahei';
+        }
+        .test::-ms-clear{
+            display: none;
+        }
+        .test:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="test..." class="test">
+    <script type="text/javascript" src="http://static.jiaju.com/jiaju/com/js/dojquery-s-min.js"></script>
+    <script type="text/javascript" src="./assets/js/placeholder.js"></script>
+</body>
+</html>
