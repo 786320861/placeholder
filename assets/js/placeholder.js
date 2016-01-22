@@ -54,13 +54,24 @@
         });
         $self.keyup(function(){
             val = $self.val();
-            if(val==""){
+            toggle();
+        });
+        $self.blur(function(){
+            toggle();
+        });
+        /*
+        * 禁用此文本框的右键
+        * */
+        self.oncontextmenu =function(){
+            return false;
+        };
+        function toggle(){
+            if(val==""||!val){
                 $next.show();
             }else{
                 $next.hide();
-                //alert("changed");
             }
-        });
+        }
     },
     Placeholder.prototype.init = function () {
         var self = this.dom,
